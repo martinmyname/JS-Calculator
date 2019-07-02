@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javascript Calculator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="calc.js"></script>
+</head>
+<body>
+
+<div class="jumbotron">
+	  <h1>Javascript Calculator</h1>
+	<div class="container">
+		<div class="form">
+			<div >
+			 <input id="displayValue" type="text"  placeholder="0" name="displayValue" style="text-align: right;"> 
+			</div>
+			<div class="display">
+			 <input id="displayResult" type="text"  placeholder="00" name="displayResult" style="text-align: right;" >
+			</div>
+		</div> 
+	  <div class="row">
+	    <div >
+	   <input class="col-sm-2" type="button" name="b1" value="1" onClick="calcNumbers(b1.value)">
+	    </div>
+	    <div >
+	     <input class="col-sm-2" type="button" name="b2" value="2" onClick="calcNumbers(b2.value)">
+	    </div>
+	    <div >
+	      <input class="col-sm-2" type="button" name="b3" value="3" onClick="calcNumbers(b3.value)">
+	    </div>
+	     <div >
+	     <input class="col-sm-2" type="button" name="add" value="+" onClick="calcNumbers(add.value)">
+	    </div>
+	    <div >
+	    <input class="col-sm-2" type="button" name="null" value="^" onClick="calcNumbers(null.value)">
+	    </div>
+	  </div>
+	  <div class="row">
+	    <div >
+	    <input class="col-sm-2" type="button" name="b4" value="4" onClick="calcNumbers(b4.value)">
+	    </div>
+	    <div >
+	     <input class="col-sm-2" type="button" name="b5" value="5" onClick="calcNumbers(b5.value)">
+	    </div>
+	    <div >
+	     <input class="col-sm-2" type="button" name="b6" value="6" onClick="calcNumbers(b6.value)">
+	    </div>
+	     <div >
+	   <input class="col-sm-2" type="button" name="mul" value="*" onClick="calcNumbers(mul.value)">
+	    </div>
+	    <div >
+	    <input class="col-sm-2" type="button" name="Sqrt()" value="Sqrt()" onClick="calcNumbers(/.value)">
+	    </div>
+	  </div>
+	  <div class="row">
+	    <div >
+	    <input class="col-sm-2" type="button" name="b7" value="7" onClick="calcNumbers(b7.value)">
+	    </div>
+	    <div >
+	     <input class="col-sm-2" type="button" name="b8" value="8" onClick="calcNumbers(b8.value)">
+	    </div>
+	    <div >
+	     <input class="col-sm-2" type="button" name="b9" value="9" onClick="calcNumbers(b9.value)">
+	    </div>
+	     <div>
+	    <input class="col-sm-2" type="button" name="sub" value="-" onClick="calcNumbers(sub.value)">
+	    </div>
+	    <div >
+	     <input class="col-sm-2" type="button" name="clear" value="C" onClick="calcNumbers(clear.value)">
+	    </div>
+	  </div>
+	  <div class="row">
+	    <div >
+	    <input class="col-sm-2" type="button" name="perc" value="%" onClick="calcNumbers(b5.value)">
+	    </div>
+	    <div >
+	    <input class="col-sm-2" type="button" name="zero" value="0" onClick="calcNumbers(zero.value)">
+	    </div>
+	    <div >
+	     <input class="col-sm-2" type="button" name="zero2" value="00" onClick="calcNumbers(zero2.value)">
+	    </div>
+	     <div >
+	     <input class="col-sm-2" type="button" name="div" value="/" onClick="calcNumbers(div.value)">
+	    </div>
+	     <input class="col-sm-2" type="button"  value="=" onClick="displayResult.value=eval(displayResult.value)">
+	    </div>
+	  </div>
+
+	</div>
+</div>
+
+</body>
+</html>
